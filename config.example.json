@@ -1,0 +1,38 @@
+{
+  "google_sheets": {
+    "credentials_path": "credentials.json",
+    "sheet_id": "YOUR_SHEET_ID",
+    "write_range": "Leads!A1"
+  },
+  "company_db": {
+    "type": "csv",
+    "path": "data/company_db.csv",
+    "sheet_id": null,
+    "range": null
+  },
+  "search": {
+    "use_google_api": true,
+    "google_api_key": "YOUR_GOOGLE_API_KEY",
+    "google_cx": "YOUR_CUSTOM_SEARCH_ENGINE_ID",
+    "max_results_per_query": 20
+  },
+  "social": {
+    "linkedin_token": "LINKEDIN_OAUTH_TOKEN",
+    "instagram_token": "INSTAGRAM_GRAPH_TOKEN",
+    "twitter_bearer": "TWITTER_BEARER"
+  },
+  "dedupe": {
+    "fuzzy_threshold": 90,
+    "phone_normalization": "id"
+  },
+  "rate_limit": {
+    "requests_per_minute": 30,
+    "min_delay_seconds": 2,
+    "max_delay_seconds": 6
+  },
+  "logging": {
+    "duplicates_path": "logs/duplicates.csv",
+    "errors_path": "logs/errors.log",
+    "run_summary_path": "logs/run_log.csv"
+  }
+}
